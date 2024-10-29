@@ -1,5 +1,15 @@
-nav a{
-   
+.navbar {
+   display: flex;
+   gap: 20px;
   
-   margin-right: 20px;
-}
+ }
+ .navbar li {
+  list-style-type: none;
+ }
+ .red li {
+   background-color: red;
+   color: white;
+   border-radius: 5px;
+   
+ }
+ 
