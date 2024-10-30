@@ -7,7 +7,7 @@ export default function Header() {
 
   return (
     <div>
-      <h2>Navbar</h2>
+     
       <nav className="navbar">
         <NavLink to="/" className={(e) => (e.isActive ? 'red' : '')}>
           <li>Home</li>
@@ -17,6 +17,9 @@ export default function Header() {
         </NavLink>
         <NavLink to="/about" className={(e) => (e.isActive ? 'red' : '')}>
           <li>About</li>
+        </NavLink>
+        <NavLink to="/users" className={(e) => (e.isActive ? 'red' : '')}>
+          <li>Users</li>
         </NavLink>
       </nav>
     </div>

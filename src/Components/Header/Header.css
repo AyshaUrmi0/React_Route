@@ -1,15 +1,25 @@
 .navbar {
    display: flex;
    gap: 20px;
+   justify-content: center;
+   align-items: center;
+   background-color: #463535;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
   
  }
  .navbar li {
   list-style-type: none;
+  text-decoration: none;
+  padding: 20px;
+  
  }
  .red li {
    background-color: red;
    color: white;
    border-radius: 5px;
+   
    
  }
  
