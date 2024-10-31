@@ -16,13 +16,15 @@ import Contact from './Components/Contact/Contact';
 import Users from './Components/Users/Users';
 import UserDetails from './Components/UserDetails/UserDetails';
 
-import Posts from './Components/Posts/Posts';
+import Posts from './Components/Posts/posts';
+import ErrorPage from './Components/ErrorPage/ErrorPage';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/about",
