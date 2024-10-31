@@ -5,12 +5,14 @@ import './UserDetails.css';
 
 const UserDetails = () => {
     const user=useLoaderData();
+    const {userId}=useParams();
     const navigate=useNavigate();
     const handleGoBack=()=>{
         navigate(-1);
     }
 
     const {name,email,phone}=user;
+    console.log(userId);
     return (
         <div className='user-details'>
             <h3>This from UserDetails</h3>
