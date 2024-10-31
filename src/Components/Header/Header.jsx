@@ -18,9 +18,12 @@ export default function Header() {
         <NavLink to="/about" className={(e) => (e.isActive ? 'red' : '')}>
           <li>About</li>
         </NavLink>
-        <NavLink to="/users" className={(e) => (e.isActive ? 'red' : '')}>
-          <li>Users</li>
-        </NavLink>
+        <NavLink to="/users" className={({ isActive }) => (isActive ? 'red' : '')}>
+  <li>Users</li>
+</NavLink>
+        <NavLink to="/posts" className={({ isActive }) => (isActive ? 'red' : '')}>
+  <li>Posts</li>
+</NavLink>
       </nav>
     </div>
   );
